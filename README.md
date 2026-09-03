@@ -1,2 +1,36 @@
-# vscode-discord-java-rpc
-Custom Discord Rich Presence preset for Java developers in Visual Studio Code.
+ - Custom Discord Rich Presence for Java (VS Code)
+
+Configuración personalizada y lista para usar de **Discord Rich Presence** enfocada en desarrollo en **Java** para Visual Studio Code.
+
+Muestra un estado elegante en Discord indicando que estás programando en Java con un icono temático personalizado, tiempo transcurrido y detalles de edición.
+
+---
+
+ - Vista previa
+
+*(Arrastra y suelta aquí tu captura de pantalla de Discord para que se vea el resultado)*
+
+---
+
+ - Instalación y Configuración
+
+Sigue estos 3 sencillos pasos para activarlo en tu entorno:
+
+### 1. Instalar la extensión en VS Code
+Abre Visual Studio Code e instala la extensión base:
+* **Nombre:** `Discord Rich Presence`
+* **Autor:** `leonardssh`
+* **ID de extensión:** `leonardssh.vscord`
+
+*(Puedes buscarla directamente en la pestaña de Extensiones presionando `Ctrl + Shift + X`).*
+
+-- 2. Aplicar la configuración
+1. En VS Code, presiona `Ctrl + Shift + P`.
+2. Escribe y selecciona: `Preferences: Open User Settings (JSON)`.
+3. Pega el siguiente bloque de configuración dentro de las llaves principales `{ ... }` (recuerda poner una coma `,` en la línea anterior si ya tenías otros ajustes):
+
+```json
+"vscord.app.id": "1544865135963803780",
+"vscord.status.image.large.editing.key": "java",
+"vscord.status.image.large.idle.key": "java",
+"vscord.status.image.large.debugging.key": "java"
